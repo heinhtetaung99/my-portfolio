@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Koulen&family=Lato:wght@400;700&family=Oswald:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 90%;
+    max-width: 1280px;
+  }
+}
+
+.header {
+  background-image: url(images/header-background.jpg);
+  background-size: cover;
+}
+
+nav {
+  padding: 1em 0;
+
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 6em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+nav ul li a {
+  font-size: 0.8rem;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 400ms;
+}
+
+nav ul li a:hover {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hero {
+  padding: 12em 0;
+  text-align: center;
+}
+
+.hero h1 {
+  padding-bottom: 0.2em;
+  font-size: 5rem;
+  font-family: "Koulen", cursive;
+  letter-spacing: 0.5rem;
+}
+
+.hero p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 2em;
+}
+
+.hero hr {
+  width: 60%;
+  margin: 1.5em auto;
+}
+
+.social ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1em;
+}
+
+.social ul li a img {
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.social ul li a img:hover {
+  box-shadow: -3px 3px 1px #757574;
+  transform: translate(4px, -4px);
+}
+
+.profile {
+  background-color: #2b2b2b;
+  padding: 6em 0;
+}
+
+.about-me {
+  display: flex;
+  gap: 4em;
+}
+
+.about-me img {
+  max-width: 25%;
+  height: 15%;
+  border-radius: 50%;
+}
+
+.text-container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.about-me-info h2 {
+  margin-bottom: 1em;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.about-me-info p {
+  color: #7a7a7a;
+  font-family: "Lato", sans-serif;
+}
+
+.about-me-info h2 + p {
+  margin-bottom: 2em;
+}
+
+.about-me-info button {
+  padding: 1em 2em;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  background-color: #3b3b3b;
+  transition: 0.3s;
+}
+
+.about-me-info button:hover {
+  color: #3b3b3b;
+  background-color: #fff;
+  box-shadow: -3px 3px 1px #757574;
+  transform: translate(4px, -4px);
+  cursor: pointer;
+}
+
+.education {
+  padding: 6em 0;
+  display: flex;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.education h3 {
+  width: 30%;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #11abb0;
+  text-decoration-thickness: 0.2em;
+  text-underline-offset: 0.5em;
+  transition: 0.5s;
+}
+
+.education h3:hover {
+  text-decoration-color: red;
+  cursor: pointer;
+}
+
+.education h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.education p + h2 {
+  margin-top: 1em;
+}
+
+.education small {
+  font-style: italic;
+  color: #5e6b70;
+}
+
+.education p {
+  margin-top: 1em;
+  font-family: "Lato", sans-serif;
+  color: #7c949d;
+}
+
+.skills p {
+  margin: 0;
+}
+
+.skills h4 {
+  color: #313131;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 2em 0;
+}
+
+.skills .bar {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 1em 0;
+  background-color: #968f8f;
+}
+
+.skills .bar-expand {
+  background-color: #313131;
+  border-radius: 4px;
+  padding: 1em 5em;
+}
+
+.skills .i-bar-expand {
+  background-color: #313131;
+  border-radius: 4px;
+  padding: 1em 10em;
+}
+
+.skills .w-bar-expand {
+  background-color: #313131;
+  border-radius: 4px;
+  padding: 1em 8em;
+}
+
+.skills .c-bar-expand {
+  background-color: #313131;
+  border-radius: 4px;
+  padding: 1em 12em;
+}
+
+.skills .h-bar-expand {
+  background-color: #313131;
+  border-radius: 4px;
+  padding: 1em 12em;
+}
+
+.skills .j-bar-expand {
+  background-color: #313131;
+  border-radius: 4px;
+  padding: 1em 3em;
+}
+
+.works {
+  background-color: #ebeeee;
+  padding: 4em 0;
+}
+
+.works h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #95a3a3;
+  padding-bottom: 2em;
+}
+
+.gallery {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery .hover-main img {
+  flex: 1 1 10rem;
+  max-width: 90%;
+  min-height: 20vh;
+  max-height: 30vh;
+  margin-bottom: 2em;
+
+}
+
+.hover-main {
+  position: relative;
+
+  transition: 0.3s;
+}
+
+.hover-main:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.hover-text {
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  transition: 2s;
+  display: none;
+}
+
+.hover-text h3 {
+  font-family: "Lato", sans-serif;
+}
+
+.hover-text span {
+  font-family: "Koulen", cursive;
+}
+
+.hover-text img {
+  padding: 6em 8em;
+}
+
+.hover-main img:hover + .hover-text {
+  display: block;
+}
+
+.quotes {
+  background-image: url(images/blur-bg.jpg);
+  background-size: cover;
+}
+
+.show-speech {
+  visibility: visible;
+}
+
+.speech {
+  visibility: hidden;
+}
+
+.quotes p {
+  color: #11abb0;
+}
+
+.login-form {
+  background-color: #191919;
+  padding: 4em 0;
+}
+
+.message-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+  align-items: center;
+}
+
+.message-box img {
+  width: 10%;
+}
+
+.message-box p {
+  color: #636363;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+   padding-top: 2em;
+}
+
+.register .register-here {
+  width: 60%;
+  align-items: center;
+ 
+}
+
+.input-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+}
+
+.input-holder label {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.input-holder input {
+  width: 70%;
+  padding: 1.8em 1em;
+  border: none;
+  background-color: #373233;
+}
+
+.input-holder input:focus {
+  
+  background-color: #fff;
+}
+
+.input-holder input:focus::placeholder {
+  color: transparent;
+}
+
+.input-holder textarea {
+  width: 70%;
+  padding: 1em;
+  resize: none;
+  border: none;
+  background-color: #373233;
+}
+
+.input-holder textarea:focus {
+  background-color: #fff;
+}
+
+.submit {
+ margin: 0 18em;
+  padding: 1.5em 3em;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  transition: 0.4s;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+
+}
+
+.register .social-info {
+  width: 40%;
+  padding: 1em 5em;
+}
+
+.social-info h3 {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.social-info p {
+  color: #4d4c4c;
+  font-family: "Lato", sans-serif;
+  margin: 2em 0;
+}
+
+.social-info cite {
+  color: #353434;
+}
+
+
+footer {
+  text-align: center;
+  padding: 4em 0;
+  background-color: #fff;
+}
+
+footer ul li {
+  margin-bottom: 2em;
+  margin-right: 3em;
+}
+
+footer span {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
